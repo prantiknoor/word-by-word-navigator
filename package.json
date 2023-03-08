@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/prantiknoor/word-by-word-navigator",
   "description": "Easily navigate, select, and delete individual words in camelCase, snake_case, and other naming conventions",
-  "icon": "https://raw.githubusercontent.com/prantiknoor/word-by-word-navigator/main/assets/icon.png",
+  "icon": "assets/icon.png",
   "version": "0.1.1",
   "engines": {
     "vscode": "^1.76.0"
