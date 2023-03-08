@@ -1,5 +1,7 @@
 # Changelog
 
+### [0.1.1](https://github.com/prantiknoor/word-by-word-navigator/compare/0.1.0...0.1.1) (2023-03-08)
+
 ## 0.1.0 (2023-03-08)
 
 
