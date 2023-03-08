@@ -3,22 +3,75 @@
   "displayName": "Word-by-word navigator",
   "publisher": "Prantik",
   "license": "MIT",
-  "repository": "https://github.com/prantiknoor/",
+  "repository": "https://github.com/prantiknoor/word-by-word-navigator",
   "description": "Easily navigate, select, and delete individual words in camelCase, snake_case, and other naming conventions",
-  "version": "0.0.1",
+  "icon": "https://raw.githubusercontent.com/prantiknoor/word-by-word-navigator/main/assets/icon.png",
+  "version": "0.0.0",
   "engines": {
     "vscode": "^1.76.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "keybindings": [
       {
-        "command": "word-by-word-navigator.helloWorld",
-        "title": "Hello World"
+        "command": "word-by-word-navigator.navigateCursor",
+        "key": "ctrl+alt+left",
+        "mac": "cmd+alt+left",
+        "args": "left",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.navigateCursor",
+        "key": "ctrl+alt+right",
+        "mac": "cmd+alt+right",
+        "args": "right",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.selectNextMatch",
+        "key": "ctrl+shift+alt+left",
+        "mac": "cmd+shift+alt+left",
+        "args": "left",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.selectNextMatch",
+        "key": "ctrl+shift+alt+right",
+        "mac": "cmd+shift+alt+right",
+        "args": "right",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.deleteNextMatch",
+        "key": "alt+backspace",
+        "args": "left",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.deleteNextMatch",
+        "key": "alt+delete",
+        "args": "right",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.deleteNextMatch",
+        "key": "ctrl+alt+backspace",
+        "mac": "cmd+alt+backspace",
+        "args": "left",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "word-by-word-navigator.deleteNextMatch",
+        "key": "ctrl+alt+delete",
+        "mac": "cmd+alt+delete",
+        "args": "right",
+        "when": "editorTextFocus"
       }
     ]
   },
